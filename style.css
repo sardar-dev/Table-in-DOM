@@ -1,0 +1,25 @@
+h1 {
+  background-color: aqua;
+  color: rgb(231, 0, 0);
+  border-radius: 5%;
+  width: 50%;
+  margin-left: 23%;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  margin-left: 37%;
+  color: rgb(255, 0, 89);
+}
+button {
+  color: navy;
+  border-color: blueviolet;
+  background-color: springgreen;
+}
+p {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: green;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table in DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Table Generator</h1>
+
+    <input type="text" />
+    <button onclick="clicks()">Click here to generate table</button>
+    <p>Table will be printed here</p>
+
+    <script>
+      let input = document.querySelector("input");
+      let btn = document.querySelector("button");
+      let output = document.querySelector("p");
+
+      function clicks() {
+        let tableof = Number(input.value); //table of
+
+        let result = "";
+        for (let i = 1; i <= 10; i++) {
+          result += ` ${tableof} x  ${i} = ${i * tableof} ` + "<br>";
+
+          input.value = "";
+        }
+        output.innerHTML = result;
+      }
+      
+    </script>
+  </body>
+</html>
