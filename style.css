@@ -1,21 +1,37 @@
+
+div {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  padding-top: 10%;
+  width: 97vw;
+  height: 70vh;
+  border: 5px sold red;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: red;
+
+}
 h1 {
-  background-color: aqua;
+  background-color: rgb(212, 255, 0);
   color: rgb(231, 0, 0);
   border-radius: 5%;
-  width: 50%;
-  margin-left: 23%;
-  align-items: center;
+  width: 40%;
   text-align: center;
+  margin-bottom: 10%;
 }
 
 input {
-  margin-left: 37%;
   color: rgb(255, 0, 89);
+  width: 20vw;
+  border-radius: 5%;
 }
 button {
   color: navy;
-  border-color: blueviolet;
-  background-color: springgreen;
+  width: 15%;  
+  padding:0px 5px;
+  font-size: small;
 }
 p {
   align-items: center;
@@ -23,3 +39,12 @@ p {
   width: 100%;
   color: green;
 }
+
+@media (max-width: 768px){
+  h1 {
+
+    font-size: 100%;
+
+  }
+}
+  
