@@ -1,50 +1,90 @@
 
-div {
+body {
+  overflow: hidden;
+  background-color: white;
+}
+.div {
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
-  padding-top: 10%;
-  width: 97vw;
-  height: 70vh;
+ height: 100%;
+ padding: 50px;
   border: 5px sold red;
   border-radius: 10px;
-  background-color: skyblue;
-  color: red;
+  background-color: #525EA7;
+  box-shadow: 1px 1px 10px rgb(45, 45, 45);
+  
+
 
 }
-h1 {
-  background-color: rgb(212, 255, 0);
-  color: rgb(231, 0, 0);
-  border-radius: 5%;
-  width: 40%;
-  text-align: center;
+h1 { 
+  
   margin-bottom: 10%;
+  background-color: rgb(247, 181, 0);
+  color: black;
+  font-family: sans-serif;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0.5%;
+  text-align: center;
+
 }
 
 input {
   color: rgb(255, 0, 89);
   width: 20vw;
-  border-radius: 5%;
+  padding: 5px;
+  margin: 5px;
 }
-button {
-  color: navy;
-  width: 15%;  
-  padding:0px 5px;
+
+.button {
+  
+  padding: 1px;
+  width: 5%;  
   font-size: small;
+  border: 1px solid black;
+  border-radius: 4px;
+
+
 }
+
 p {
   align-items: center;
   text-align: center;
   width: 100%;
-  color: green;
-}
-
-@media (max-width: 768px){
-  h1 {
-
-    font-size: 100%;
-
-  }
-}
+  color: #97DDE9;
   
+}
+
+/* From Uiverse.io by mrtqzbek11 */ 
+button {
+  width: 100px;
+  height: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0.5rem;
+  border: none;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+}
+
+button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+button:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  transition: 0.5s;
+}
