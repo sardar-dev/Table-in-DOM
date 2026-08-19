@@ -26,9 +26,8 @@ h1 {
   background-color: rgb(247, 181, 0);
   color: black;
   font-family: sans-serif;
-  border: 1px solid red;
   border-radius: 5px;
-  padding: 0.5%;
+  padding: 7px;
   text-align: center;
 }
 
@@ -37,6 +36,7 @@ input {
   width: 100px;
   padding: 5px;
   margin: 5px;
+  border-radius: 5px;
 }
 
 p {
@@ -52,7 +52,7 @@ button {
   cursor: pointer;
   color: #fff;
   font-size: 15px;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   border: none;
   position: relative;
   background: #100720;
