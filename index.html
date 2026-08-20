@@ -8,18 +8,15 @@
   </head>
   <body>
     <div class="div">
-      <h1>Table Generator</h1>
+      <form onsubmit="execute(event)">
+        <h1>Table Generator</h1>
+        <input type="number" placeholder="Enter the number" />
 
-     <input 
-  type="text" 
-  inputmode="numeric" 
-  oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
-  placeholder="Enter a number"
-/>
-      <button onclick="clicks()">Generate</button>
-      <p>Table will be printed here</p>
+        <button>Generate</button>
+      </form>
+
+      <p></p>
     </div>
-
     <script src="./app.js"></script>
   </body>
 </html>
