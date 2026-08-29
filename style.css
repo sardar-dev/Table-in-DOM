@@ -4,11 +4,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .div {
   margin-top: 10%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -19,6 +20,7 @@ body {
   background-color: #525ea7;
   box-shadow: 1px 1px 10px rgb(45, 45, 45);
 }
+
 h1 {
   margin-bottom: 10%;
   background-color: rgb(247, 181, 0);
@@ -29,11 +31,21 @@ h1 {
   text-align: center;
 }
 
+.inp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
 input {
   color: rgb(255, 0, 89);
   width: 100px;
   padding: 5px;
   margin: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px 1px black;
   border-radius: 5px;
 }
 
@@ -43,7 +55,7 @@ p {
   width: 100%;
   color: orange;
   font-size: 20px;
-  text-shadow: 1px 1px 10px gold;
+  text-shadow: 1px 1px 10px black;
 }
 
 button {
@@ -52,11 +64,11 @@ button {
   cursor: pointer;
   color: #fff;
   font-size: 15px;
-  border-radius: 0.4rem;
+  border-radius: 0.3rem;
   border: none;
   position: relative;
-  background: #100720;
-  transition: 0.1s;
+  background: dodgerblue;
+  transition: 0.5s;
 }
 
 button::after {
@@ -82,5 +94,5 @@ button:active {
     rgba(255, 94, 247, 1) 17.8%,
     rgba(2, 245, 255, 1) 100.2%
   );
-  transition: 0.5s;
+  transition: 0.1s;
 }
